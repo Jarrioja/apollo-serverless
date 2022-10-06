@@ -1,7 +1,7 @@
 [build]
-  command = "npm run build" # o con yarn: "yarn build".
+  command = "npm build" # o con yarn: "yarn build".
   functions = "functions" # este comando creará una carpeta llamada "functions" y guardara las funciones Lambda.
-  publish = "src" # carpeta que contiene los archivos del proyecto. 
+  publish = "static" # carpeta que contiene los archivos del proyecto. 
 
 [[redirects]]
   from = "/graphql"

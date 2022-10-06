@@ -1,4 +1,4 @@
-const Transaction = require("../models/transaction");
+const Transaction = require("../database/models/transaction");
 
 module.exports = {
   createTransaction: async function ({ transactionInput }) {
