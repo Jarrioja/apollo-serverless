@@ -1,8 +1,23 @@
 require("dotenv").config();
 const { ApolloServer, gql } = require("apollo-server-lambda");
-
 const mongoose = require("mongoose");
-const Transaction = require("../database/models/transaction");
+
+const Schema = mongoose.Schema;
+
+const transactionSchema = new Schema(
+  {
+    operation: {
+      type: String,
+      require: true,
+    },
+    result: {
+      type: String,
+      require: true,
+    },
+  },
+  { timestamps: true }
+);
+const Transaction = mongoose.model("Transaction", transactionSchema);
 
 const typeDefs = gql`
   type Transaction {
