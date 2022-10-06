@@ -1,5 +1,5 @@
 [build]
-  command = "npm" # o con yarn: "yarn build".
+  command = "yarn" # o con yarn: "yarn build".
   functions = "functions" # este comando creará una carpeta llamada "functions" y guardara las funciones Lambda.
   publish = "static" # carpeta que contiene los archivos del proyecto. 
 
