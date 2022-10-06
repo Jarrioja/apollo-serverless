@@ -1,4 +1,4 @@
-import { gql } from "graphql";
+const { gql } = require("graphql");
 
 const typeDefs = gql`
   type Transaction {
@@ -23,4 +23,4 @@ const typeDefs = gql`
   }
 `;
 
-export default typeDefs;
+module.exports = typeDefs;
