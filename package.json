@@ -1,0 +1,22 @@
+{
+  "name": "apollo-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-lambda": "^3.10.2",
+    "dotenv": "^16.0.3",
+    "encoding": "^0.1.13",
+    "graphql": "^16.6.0",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.5",
+    "netlify-lambda": "^2.0.15"
+  }
+}
